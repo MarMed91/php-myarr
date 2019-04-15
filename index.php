@@ -11,6 +11,7 @@
 
    $myArr = [];
    for ($i=0; $i < $nItems; $i++) {
+
      $randomNum = rand(1, 100);
      $myArr[] = $randomNum;
    }
@@ -20,6 +21,7 @@
 
    $sum = 0;
    for ($x=0; $x < $nItems; $x++) {
+
      $elem = $myArr[$x];
      $sum += $elem;
    }
@@ -29,6 +31,7 @@
 
    $max = $myArr[0];
    for ($y=0; $y < $nItems; $y++) {
+     
      $elem = $myArr[$y];
      if ($elem > $max) {
         $max = $elem;
