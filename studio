@@ -1,0 +1,70 @@
+marko@markoVirtualBox:~$ cd /var/www/html/
+marko@markoVirtualBox:/var/www/html$ ls
+FirstExercise  HelloWorld  HelloWorld3  PhpTest
+marko@markoVirtualBox:/var/www/html$ mkdir php-myarr
+marko@markoVirtualBox:/var/www/html$ ls
+FirstExercise  HelloWorld  HelloWorld3  php-myarr  PhpTest
+marko@markoVirtualBox:/var/www/html$ nano index.php
+marko@markoVirtualBox:/var/www/html$ ls
+FirstExercise  HelloWorld  HelloWorld3  index.php  php-myarr  PhpTest
+marko@markoVirtualBox:/var/www/html$ mv index.php
+mv: missing destination file operand after 'index.php'
+Try 'mv --help' for more information.
+marko@markoVirtualBox:/var/www/html$ mv index.php php-myarr
+marko@markoVirtualBox:/var/www/html$ ls
+FirstExercise  HelloWorld  HelloWorld3  php-myarr  PhpTest
+marko@markoVirtualBox:/var/www/html$ cd php-myarr
+marko@markoVirtualBox:/var/www/html/php-myarr$ ls
+index.php
+marko@markoVirtualBox:/var/www/html/php-myarr$ npm run watch-poll
+npm ERR! path /var/www/html/php-myarr/package.json
+npm ERR! code ENOENT
+npm ERR! errno -2
+npm ERR! syscall open
+npm ERR! enoent ENOENT: no such file or directory, open '/var/www/html/php-myarr/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/marko/.npm/_logs/2019-04-15T12_19_40_484Z-debug.log
+marko@markoVirtualBox:/var/www/html/php-myarr$ cd ..
+marko@markoVirtualBox:/var/www/html$ ls
+FirstExercise  HelloWorld  HelloWorld3  php-myarr  PhpTest
+marko@markoVirtualBox:/var/www/html$ ls ahls
+ls: cannot access 'ahls': No such file or directory
+marko@markoVirtualBox:/var/www/html$ ls -alh
+total 25K
+drwxrwx--- 1 root vboxsf 4,0K Apr 15 14:18 .
+drwxr-xr-x 3 root root   4,0K Apr  8 12:52 ..
+drwxrwx--- 1 root vboxsf 4,0K Apr 14 02:11 FirstExercise
+-rwxrwx--- 1 root vboxsf   30 Apr 11 09:54 .gitignore
+drwxrwx--- 1 root vboxsf 4,0K Apr 11 00:19 HelloWorld
+drwxrwx--- 1 root vboxsf 4,0K Apr 11 02:25 HelloWorld3
+drwxrwx--- 1 root vboxsf 4,0K Apr 15 14:57 php-myarr
+drwxrwx--- 1 root vboxsf    0 Apr 12 09:44 PhpTest
+marko@markoVirtualBox:/var/www/html$ cd php-myarr
+marko@markoVirtualBox:/var/www/html/php-myarr$ cp .gitignore
+cp: missing destination file operand after '.gitignore'
+Try 'cp --help' for more information.
+marko@markoVirtualBox:/var/www/html/php-myarr$ ls
+index.php
+marko@markoVirtualBox:/var/www/html/php-myarr$ cp .gitignore php-myarr
+cp: cannot stat '.gitignore': No such file or directory
+marko@markoVirtualBox:/var/www/html/php-myarr$ cd ..
+marko@markoVirtualBox:/var/www/html$ cp .gitignore php-myarr
+marko@markoVirtualBox:/var/www/html$ cd php-myarr
+marko@markoVirtualBox:/var/www/html/php-myarr$ ls
+index.php
+marko@markoVirtualBox:/var/www/html/php-myarr$ cd ..
+marko@markoVirtualBox:/var/www/html$ cp .gitignore php-myarr
+marko@markoVirtualBox:/var/www/html$ cd php-myarr
+marko@markoVirtualBox:/var/www/html/php-myarr$ ls
+index.php
+marko@markoVirtualBox:/var/www/html/php-myarr$ ls -alh
+total 14K
+drwxrwx--- 1 root vboxsf 4,0K Apr 15 15:02 .
+drwxrwx--- 1 root vboxsf 4,0K Apr 15 14:18 ..
+drwxrwx--- 1 root vboxsf 4,0K Apr 15 14:20 .git
+-rwxrwx--- 1 root vboxsf   30 Apr 15 15:03 .gitignore
+-rwxrwx--- 1 root vboxsf  632 Apr 15 14:55 index.php
+marko@markoVirtualBox:/var/www/html/php-myarr$ 

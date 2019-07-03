@@ -10,8 +10,8 @@
    $nItems = $_GET["nItems"];
 
    $myArr = [];
-   for ($i=0; $i < $nItems; $i++) {
 
+   for ($i=0; $i < $nItems; $i++) {
      $randomNum = rand(1, 100);
      $myArr[] = $randomNum;
    }
@@ -31,7 +31,7 @@
 
    $max = $myArr[0];
    for ($y=0; $y < $nItems; $y++) {
-     
+
      $elem = $myArr[$y];
      if ($elem > $max) {
         $max = $elem;
